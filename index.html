@@ -22,17 +22,19 @@
     </form>
   </div>
 
-  <div class="section">
+  <div class="section" id="customerSelectionSection">
     <h2>Customer Selection</h2>
-    <select id="customerSelect" onchange="selectCustomer()">
-      <option value="">Select a customer</option>
+    <select id="customerSelect">
+      <option value="">Select an option</option>
+      <option value="addNew">Add New Customer</option>
+      <option value="existing">Existing Customer</option>
     </select>
-    <button type="button" onclick="showAddCustomerForm()">Add New Customer</button>
+    <button type="button" onclick="handleCustomerSelection()">Next</button>
   </div>
 
-  <div class="section" id="customerFormSection">
-    <h2>Customer</h2>
-    <form id="customerForm">
+  <div class="section" id="addCustomerSection">
+    <h2>Add Customer</h2>
+    <form id="addCustomerForm">
       <label for="name">Name:</label>
       <input type="text" id="name" required><br>
 
@@ -58,20 +60,13 @@
     </form>
   </div>
 
-  <div class="section">
-    <h2>Chemicals</h2>
-    <form id="chemicalsForm">
-      <div class="customer-info" id="customerInfo"></div>
-      <div class="chemicals-container" id="chemicalsContainer"></div>
-      <button type="button" onclick="addChemicals()">Add Chemicals</button>
-    </form>
-  </div>
+  <div class="section" id="existingCustomerSection">
+    <h2>Existing Customer</h2>
+    <form id="existingCustomerForm">
+      <label for="customerName">Customer Name:</label>
+      <input type="text" id="customerName" required><br>
 
-  <div class="section">
-    <h2>Pictures</h2>
-    <form id="pictureForm">
-      <input type="file" id="picture" accept="image/*" capture="camera"><br>
-      <button type="button" onclick="addPicture()">Add Picture</button>
+      <button type="button" onclick="selectExistingCustomer()">Select Customer</button>
     </form>
   </div>
 
