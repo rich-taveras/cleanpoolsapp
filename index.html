@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Customer Management App</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <style>
+    .logo {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+    }
+
+    .section {
+      margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="logo">
+    <img src="company_logo.png" alt="Company Logo" width="100" height="100">
+  </div>
+
+  <div class="section">
+    <h2>Login</h2>
+    <form id="loginForm">
+      <label for="username">Username:</label>
+      <input type="text" id="username" required><br>
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" required><br>
+
+      <button type="button" onclick="login()">Login</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Customer Selection</h2>
+    <select id="customerSelect" onchange="selectCustomer()">
+      <option value="">Select a customer</option>
+    </select>
+    <button type="button" onclick="showAddCustomerForm()">Add New Customer</button>
+  </div>
+
+  <div class="section" id="customerFormSection">
+    <h2>Customer</h2>
+    <form id="customerForm">
+      <label for="name">Name:</label>
+      <input type="text" id="name" required><br>
+
+      <label for="address">Address:</label>
+      <input type="text" id="address" required><br>
+
+      <label for="phone">Phone:</label>
+      <input type="tel" id="phone" required><br>
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" required><br>
+
+      <label for="poolType">Pool Type:</label>
+      <select id="poolType" required>
+        <option value="salt">Salt</option>
+        <option value="chlorine">Chlorine</option>
+      </select><br>
+
+      <label for="gateCode">Gate Code:</label>
+      <input type="text" id="gateCode"><br>
+
+      <button type="button" onclick="addCustomer()">Add Customer</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Chemicals</h2>
+    <form id="chemicalsForm">
+      <label for="chl">Chlorine Level:</label>
+      <input type="text" id="chl" required><br>
+
+      <label for="ph">pH Level:</label>
+      <input type="text" id="ph" required><br>
+
+      <label for="ta">Total Alkalinity:</label>
+      <input type="text" id="ta" required><br>
+
+      <label for="cha">Calcium Hardness:</label>
+      <input type="text" id="cha" required><br>
+
+      <label for="sta">Stabilizer:</label>
+      <input type="text" id="sta" required><br>
+
+      <label for="salt">Salt Level:</label>
+      <input type="text" id="salt" required><br>
+
+      <label for="temp">Temperature:</label>
+      <input type="text" id="temp" required><br>
+
+      <label for="chemicalList">Chemicals List:</label>
+      <textarea id="chemicalList" rows="4" cols="50" required></textarea><br>
+
+      <button type="button" onclick="addChemicals()">Add Chemicals</button>
+    </form>
+  </div>
+
+  <div class="section">
+    <h2>Pictures</h2>
+    <form id="pictureForm">
+      <input type="file" id="picture" accept="image/*" capture="camera"><br>
+      <button type="button" onclick="addPicture()">Add Picture</button>
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
