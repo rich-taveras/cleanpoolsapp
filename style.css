@@ -8,25 +8,6 @@
   margin-bottom: 20px;
 }
 
-.customer-info {
-  font-weight: bold;
+.section h2 {
   margin-bottom: 10px;
-}
-
-.chemicals-container {
-  display: flex;
-  flex-wrap: wrap;
-}
-
-.chemicals-column {
-  flex-basis: 33%;
-}
-
-.chemicals-column ul {
-  list-style: none;
-  padding: 0;
-}
-
-.chemicals-column ul li {
-  margin-bottom: 5px;
 }
