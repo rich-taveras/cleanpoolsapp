@@ -1,0 +1,19 @@
+ /* Media query for responsive design */
+  
+ @media (max-width: 768px) {
+    .menu {
+      display: none;
+    }
+  
+    .menu-icon {
+      display: block;
+    }
+  
+    .menu-icon:hover {
+      background-color: #555;
+    }
+  
+    #menu-toggle:checked ~ .menu {
+      display: block;
+    }
+  }

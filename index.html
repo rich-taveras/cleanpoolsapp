@@ -3,6 +3,7 @@
   <head>
     <title>AquaCare</title>
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <link rel="stylesheet" href="./assets/css/colors.css">
   </head>
   <body>
     <header>
@@ -25,24 +26,29 @@
         <button type="submit">Submit</button>
       </form>
     </div>
+    
 
     <div class="container" id="dashboardSection" style="display: none">
-      <div class="sidebar">
-        <ul>
-          <li class="active">
-          <li>
-            <li id="waterChemistryLink">Water Chemistry</li>
-          </li>
-      </div>
+      <nav>
+        <div class="navbar">
+          <input type="checkbox" id="menu-toggle">
+          <label for="menu-toggle" class="menu-icon">&#9776;</label>
+          <ul class="menu">
+            <li><a href="#">Water Chemistry</a></li>
+            <li><a href="#">Customers</a></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </div>
+      </nav>
 
       <div class="main-content">
         <h2>Dashboard</h2>
         <button id="logoutBtn" style="display: none;">Logout</button>
 
-        <div class="dashboard-section">
+        <div class="dashboard-section customer-info">
           <div class="customer-info">
             <div class="pool-image">
-              <img src="./assets/images/logo.jpg" alt="Customer Image" />
+              <img src="./assets/images/poolPicture.webp" alt="Customer Image" />
             </div>
             <div class="customer-details">
               <h3><a href="#" id="customerLink">Customer Information</a></h3>
@@ -54,7 +60,7 @@
           <p>Gallons: 10000</p>
         </div>
 
-        <div class="dashboard-section">
+        <div class="dashboard-section chemical-records">
           <h3>Chemical Records</h3>
           <table>
             <tr>
