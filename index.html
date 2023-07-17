@@ -1,113 +1,129 @@
 <!DOCTYPE html>
+
 <html>
-<head>
-  <title>Customer Management App</title>
-  <link rel="stylesheet" type="text/css" href="style.css">
-  <style>
-    .logo {
-      position: absolute;
-      top: 10px;
-      left: 10px;
-    }
+  <head>
+    <title>AquaCare</title>
 
-    .section {
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
-  <div class="logo">
-    <img src="C864E84D-F491-487C-8414-930549D6E9AE.png" alt="Company Logo" width="100" height="100">
-  </div>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
 
-  <div class="section">
-    <h2>Login</h2>
-    <form id="loginForm">
-      <label for="username">Username:</label>
-      <input type="text" id="username" required><br>
+  <body>
+    <header>
+      <div class="logo">
+        <img src="./assets/images/logo.png" alt="Company Logo" />
+      </div>
+    </header>
 
-      <label for="password">Password:</label>
-      <input type="password" id="password" required><br>
+    <div id="loginSection" class="section">
+      <h2>Login</h2>
 
-      <button type="button" onclick="login()">Login</button>
-    </form>
-  </div>
+      <form id="loginForm" onsubmit="handleLogin(event)">
+        <label for="username">Username:</label>
 
-  <div class="section">
-    <h2>Customer Selection</h2>
-    <select id="customerSelect" onchange="selectCustomer()">
-      <option value="">Select a customer</option>
-    </select>
-    <button type="button" onclick="showAddCustomerForm()">Add New Customer</button>
-  </div>
+        <input type="text" id="username" required /><br />
 
-  <div class="section" id="customerFormSection">
-    <h2>Customer</h2>
-    <form id="customerForm">
-      <label for="name">Name:</label>
-      <input type="text" id="name" required><br>
+        <label for="password">Password:</label>
 
-      <label for="address">Address:</label>
-      <input type="text" id="address" required><br>
+        <input type="password" id="password" required /><br />
 
-      <label for="phone">Phone:</label>
-      <input type="tel" id="phone" required><br>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
 
-      <label for="email">Email:</label>
-      <input type="email" id="email" required><br>
+    <div class="container" id="dashboardSection" style="display: none">
+      <div class="sidebar">
+        <ul>
+          <li class="active">Dashboard</li>
 
-      <label for="poolType">Pool Type:</label>
-      <select id="poolType" required>
-        <option value="salt">Salt</option>
-        <option value="chlorine">Chlorine</option>
-      </select><br>
+          <li>Water Chemistry</li>
 
-      <label for="gateCode">Gate Code:</label>
-      <input type="text" id="gateCode"><br>
+          <li>Maintenance</li>
 
-      <button type="button" onclick="addCustomer()">Add Customer</button>
-    </form>
-  </div>
+          <li>Customers</li>
+        </ul>
+      </div>
 
-  <div class="section">
-    <h2>Chemicals</h2>
-    <form id="chemicalsForm">
-      <label for="chl">Chlorine Level:</label>
-      <input type="text" id="chl" required><br>
+      <div class="main-content">
+        <h2>Dashboard</h2>
 
-      <label for="ph">pH Level:</label>
-      <input type="text" id="ph" required><br>
+        <div class="dashboard-section">
+          <h3>Customer Information</h3>
 
-      <label for="ta">Total Alkalinity:</label>
-      <input type="text" id="ta" required><br>
+          <p>Name: John Doe</p>
 
-      <label for="cha">Calcium Hardness:</label>
-      <input type="text" id="cha" required><br>
+          <p>Email: johndoe@example.com</p>
 
-      <label for="sta">Stabilizer:</label>
-      <input type="text" id="sta" required><br>
+          <p>Address: 123 Main St</p>
 
-      <label for="salt">Salt Level:</label>
-      <input type="text" id="salt" required><br>
+          <p>Phone: 555-1234</p>
 
-      <label for="temp">Temperature:</label>
-      <input type="text" id="temp" required><br>
+          <p>Pool Type: Saltwater</p>
 
-      <label for="chemicalList">Chemicals List:</label>
-      <textarea id="chemicalList" rows="4" cols="50" required></textarea><br>
+          <p>Gallons: 10000</p>
+        </div>
 
-      <button type="button" onclick="addChemicals()">Add Chemicals</button>
-    </form>
-  </div>
+        <div class="dashboard-section">
+          <h3>Chemical Records</h3>
 
-  <div class="section">
-    <h2>Pictures</h2>
-    <form id="pictureForm">
-      <input type="file" id="picture" accept="image/*" capture="camera"><br>
-      <button type="button" onclick="addPicture()">Add Picture</button>
-    </form>
-  </div>
+          <table>
+            <tr>
+              <th>Date</th>
 
-  <script src="script.js"></script>
-</body>
+              <th>CHL</th>
+
+              <th>pH</th>
+
+              <th>TA</th>
+
+              <th>STA</th>
+
+              <th>CHA</th>
+
+              <th>SALT</th>
+
+              <th>TEMP</th>
+            </tr>
+
+            <tr>
+              <td>2023-07-20</td>
+
+              <td>2.5</td>
+
+              <td>7.2</td>
+
+              <td>80</td>
+
+              <td>90</td>
+
+              <td>100</td>
+
+              <td>3500</td>
+
+              <td>78</td>
+            </tr>
+
+            <tr>
+              <td>2023-07-15</td>
+
+              <td>3.0</td>
+
+              <td>7.5</td>
+
+              <td>90</td>
+
+              <td>85</td>
+
+              <td>95</td>
+
+              <td>3200</td>
+
+              <td>80</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
 </html>
