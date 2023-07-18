@@ -1,0 +1,157 @@
+header {
+     color: var( --color-primary);
+    padding: 20px;
+    text-align: center;
+  }
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+ margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+button[type="submit"] {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.logo img {
+    width: 125px;
+    height: 125px;
+    border-radius: 100%;
+  }
+
+  label {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+/*{
+  font-family: Arial, sans-serif;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+}
+.customer-info .pool-image{
+  width: 10%;
+  height: 10%;
+}
+
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+
+
+
+.container {
+  display: flex;
+}
+
+.sidebar {
+  width: 200px;
+
+  background-color: #f0f0f0;
+
+  padding: 20px;
+}
+
+.sidebar ul {
+  list-style-type: none;
+
+  padding: 0;
+
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 10px;
+
+  cursor: pointer;
+}
+
+.sidebar li.active {
+  font-weight: bold;
+}
+
+.main-content {
+  flex: 1;
+
+  padding: 20px;
+}
+
+.dashboard-section {
+  background-color: #f9f9f9;
+
+  border: 1px solid #ddd;
+
+  padding: 20px;
+
+  margin-bottom: 20px;
+}
+
+.dashboard-section h3 {
+  margin-top: 0;
+}
+
+.dashboard-section p {
+  margin-bottom: 10px;
+}
+
+.dashboard-section table {
+  width: 100%;
+
+  border-collapse: collapse;
+}
+
+.dashboard-section th,
+.dashboard-section td {
+  border: 1px solid #ddd;
+
+  padding: 8px;
+}
+
+.dashboard-section th {
+  background-color: #f0f0f0;
+}
+
+Logout button styles
+.logout-button {
+  background-color: red;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+.logoutBtn:hover {
+  background-color: #d32f2f;
+}
+
+.pool-image {
+  float: right;
+  margin-left: 10px;
+}
+
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+} */
