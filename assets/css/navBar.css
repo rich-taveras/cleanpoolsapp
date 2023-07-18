@@ -1,37 +1,23 @@
 /* CSS styles for the navigation bar */
 
 .navbar {
-    background-color: #333;
-    color: #fff;
-    height: 50px;
-  }
-  
-  .menu {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu li {
-    display: inline-block;
-  }
-  
-  .menu a {
-    display: block;
-    padding: 15px 20px;
-    color: #fff;
-    text-decoration: none;
-  }
-  
-  .menu a:hover {
-    background-color: #555;
-  }
-  
-  /* Hamburger menu icon */
-  
-  .menu-icon {
-    cursor: pointer;
-    display: none;
-    padding: 15px;
-    color: #fff;
-  }
+  background-color: var(--color-primary-dark) ;
+  color: #fff;
+}
+
+.menu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  display: inline-block;
+}
+
+.menu a {
+  display: block;
+  padding: 15px 20px;
+  color: #fff;
+  text-decoration: none;
+}
