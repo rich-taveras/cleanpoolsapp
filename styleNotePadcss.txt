@@ -1,50 +1,3 @@
-header {
-     color: var( --color-primary);
-    padding: 20px;
-    text-align: center;
-  }
-input[type="text"],
-input[type="password"] {
-  width: 100%;
-  padding: 8px;
- margin-bottom: 10px;
-  box-sizing: border-box;
-}
-
-button[type="submit"] {
-  background-color: #333;
-  color: #fff;
-  padding: 10px 20px;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-}
-
-.logo img {
-    width: 125px;
-    height: 125px;
-    border-radius: 100%;
-  }
-
-  label {
-    display: block;
-    margin-bottom: 10px;
-  }
-
-/*{
-  font-family: Arial, sans-serif;
-}
-
-body {
-  font-family: Arial, sans-serif;
-  padding: 20px;
-}
-.customer-info .pool-image{
-  width: 10%;
-  height: 10%;
-}
-
-
 
 label {
   display: block;
@@ -54,9 +7,7 @@ label {
 
 
 
-.container {
-  display: flex;
-}
+
 
 .sidebar {
   width: 200px;
@@ -125,22 +76,9 @@ label {
   background-color: #f0f0f0;
 }
 
-Logout button styles
-.logout-button {
-  background-color: red;
-  color: white;
-  padding: 10px 20px;
-  border: none;
-  cursor: pointer;
-}
-.logoutBtn:hover {
-  background-color: #d32f2f;
-}
 
-.pool-image {
-  float: right;
-  margin-left: 10px;
-}
+
+
 
 
 label {
