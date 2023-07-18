@@ -1,9 +1,8 @@
 /* CSS styles for the navigation bar */
 
 .navbar {
-    background-color: #333;
+    background-color: var(--color-primary-dark) ;
     color: #fff;
-    height: 50px;
   }
   
   .menu {
@@ -21,17 +20,4 @@
     padding: 15px 20px;
     color: #fff;
     text-decoration: none;
-  }
-  
-  .menu a:hover {
-    background-color: #555;
-  }
-  
-  /* Hamburger menu icon */
-  
-  .menu-icon {
-    cursor: pointer;
-    display: none;
-    padding: 15px;
-    color: #fff;
   }
