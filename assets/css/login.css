@@ -1,15 +1,27 @@
+<<<<<<< HEAD
 header {margin-left: 30%;
   background-color: var(--color-primary);
   padding: 20px;
   text-align: center;
   width: 37%;
+=======
+input[type="text"],
+input[type="password"] {
+  width: 100%;
+  padding: 8px;
+ margin-bottom: 10px;
+  box-sizing: border-box;
+>>>>>>> 060a2e2cf9a1976707dad847471bcc11fb6e0848
 }
 
-.logo img {
-    width: 15%;
-    height: 15%;
-    border-radius: 100%;
-  }
+button[type="submit"] {
+  background-color: var( --color-primary-dark);
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
 
   .section {
     margin: 20px auto;
@@ -24,6 +36,7 @@ header {margin-left: 30%;
     margin-top: 0;
     color: white;
   }
+<<<<<<< HEAD
   input[type="text"],
 input[type="password"] {
   width: 100%;
@@ -54,10 +67,13 @@ button[type="submit"] {
   .section h2 {
     margin-top: 0;
   }
+=======
+>>>>>>> 060a2e2cf9a1976707dad847471bcc11fb6e0848
 
   label {
     display: block;
     margin-bottom: 10px;
+<<<<<<< HEAD
     color: white;
   }
 
@@ -75,3 +91,8 @@ button[type="submit"] {
     
     /* Add any other styles for your login section here */
   }  
+=======
+  }
+
+  
+>>>>>>> 060a2e2cf9a1976707dad847471bcc11fb6e0848

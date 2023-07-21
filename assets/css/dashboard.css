@@ -1,4 +1,5 @@
 .customer-container {
+<<<<<<< HEAD
     border: 1pt solid blue;
     padding: 10pt;
     word-spacing: normal;
@@ -14,3 +15,20 @@
     border: 1pt solid blue;
     padding: 10pt;
   }
+=======
+  border: 1pt solid blue;
+  padding: 10pt;
+  word-spacing: normal;
+}
+
+.customer-container img{
+  width: 25%;
+  position: absolute;
+  margin-left: 70%;
+}
+
+.chemical-records{
+  border: 1pt solid blue;
+  padding: 10pt;
+}
+>>>>>>> 060a2e2cf9a1976707dad847471bcc11fb6e0848

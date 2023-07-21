@@ -1,6 +1,7 @@
 /* CSS styles for the navigation bar */
 
 .navbar {
+<<<<<<< HEAD
   background-color: var(--color-primary-dark) ;
   color: #fff;
 }
@@ -21,3 +22,25 @@
   color: #fff;
   text-decoration: none;
 }
+=======
+    background-color: var(--color-primary-dark) ;
+    color: #fff;
+  }
+  
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    display: inline-block;
+  }
+  
+  .menu a {
+    display: block;
+    padding: 15px 20px;
+    color: #fff;
+    text-decoration: none;
+  }
+>>>>>>> 060a2e2cf9a1976707dad847471bcc11fb6e0848
